@@ -51,7 +51,6 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Encifher',
       logo: {
         alt: 'Encifher Logo',
         src: 'img/encifher-logo-white.png',

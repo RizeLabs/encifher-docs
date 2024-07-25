@@ -2,11 +2,9 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Encifher
 
-Let's discover **Docusaurus in less than 5 minutes**.
-
-## Getting Started
+## What is Encifher ?
 
 Get started by **creating a new site**.
 
