@@ -76,7 +76,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Tutorials',
               to: '/docs/intro',
             },
           ],
@@ -108,7 +108,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Encifher, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Encifher, Inc.`,
     },
     prism: {
       theme: prismThemes.github,
