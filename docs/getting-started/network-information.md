@@ -9,7 +9,7 @@ sidebar_position: 1
 
 | Info | Value |
 |----------|----------|
-| Network Name  | Encifher Devnet  |
-| ChainId   | 912009  |
-| Network RPC    | tbd  |
-| Explorer | tbd |
+| **Network Name**  | Encifher Devnet  |
+| **ChainId**   | 912009  |
+| **Network RPC**    | tbd  |
+| **Explorer** | tbd |

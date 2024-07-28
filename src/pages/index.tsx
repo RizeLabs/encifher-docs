@@ -8,7 +8,42 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+
+  const addEncifherNetworkConfig = async () => {
+
+    try {
+      if((window as any).ethereum) {
+        await (window as any).ethereum.request({
+          "method": "wallet_addEthereumChain",
+          "params": [
+            {
+              "chainId": "0xdea89",
+              "chainName": "Encifher",
+              "rpcUrls": [
+                "https://rpc.encifher.io"
+              ],
+              "iconUrls": [
+                "https://encifher.io/enc.svg",
+                "https://encifher.io/enc.png"
+              ],
+              "nativeCurrency": {
+                "name": "ENCIFHER",
+                "symbol": "ENC",
+                "decimals": 18
+              },
+              "blockExplorerUrls": [
+                "https://explorer.encifher.io"
+              ]
+            }
+          ]
+        });
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -23,13 +58,19 @@ function HomepageHeader() {
             Head over to documentation
           </Link>
         </div>
+        <div className={styles.buttons}>
+          <button
+            className="button button--secondary button--lg" onClick={() => addEncifherNetworkConfig()}>
+            Add Encifher to Metamask
+          </button>
+        </div>
       </div>
     </header>
   );
 }
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
