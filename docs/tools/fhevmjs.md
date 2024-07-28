@@ -6,18 +6,24 @@ sidebar_position: 2
 
 ### Installation
 
+Install with yarn!
+
 ```bash
-## install with yarn
-yarn install fhevmjs
-
-### install with npm
-npm install fhevmjs
-
-### install with pnpm
-npm install fhevmjs
-
-
+yarn install fhevmjs@0.4.0
 ```
+
+Install with npm!
+
+```bash
+npm install fhevmjs@0.4.0
+```
+
+Install with pnpm
+```bash
+pnpm install fhevmjs@0.4.0
+```
+
+***Sorry currently we support v0.4.0 version of fhevmjs, Support for latest version coming soon***
 
 ### Using fhevmjs
 
@@ -38,10 +44,9 @@ const createFhevmInstance = async () => {
 
   return createInstance({ chainId, publicKey });
 };
-
 ```
 
-### Using Instance
+### Using Instance created above
 
 Encrypting inputs using instance created above
 
@@ -54,7 +59,6 @@ const encryptedParam8 = instance.encrypt8(14);
 const encryptedParam16 = instance.encrypt16(650);
 const encryptedParam32 = instance.encrypt32(71721057);
 const encryptedParam64 = instance.encrypt64(71721075);
-
 ```
 
 
