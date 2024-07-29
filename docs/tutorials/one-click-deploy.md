@@ -159,7 +159,7 @@ contract EncryptedERC20 is Ownable2Step {
 }
 ```
 
-<a href="https://remix.ethereum.org/#url=https://github.com/RizeLabs/encifher-docs/blob/91134a19e309ad36e0d0cb1251591f26c63fee7e/contracts/EncryptedERC20.sol&autoCompile=true&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js">Depoly on Remix</a>
+<a href="https://remix.ethereum.org/#url=https://github.com/RizeLabs/encifher-docs/blob/main/contracts/EncryptedERC20.sol&autoCompile=true&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js" target="_blank">Depoly on Remix</a>
 
 ### Private Voting
 
@@ -173,7 +173,7 @@ Add pre-filled link of remix.ethereum.org
 pragma solidity ^0.8.24;
 
 import "https://github.com/zama-ai/fhevm/lib/TFHE.sol";
-import "https://github.com/RizeLabs/encifher-docs/docs-remix-edit/contracts/EncryptedERC20.sol";
+import "https://github.com/RizeLabs/encifher-docs/blob/main/contracts/EncryptedERC20.sol";
 import "@openzeppelin/contracts/access/Ownable2Step.sol";
 import "https://github.com/zama-ai/fhevm/gateway/GatewayCaller.sol";
 
@@ -366,4 +366,4 @@ contract BlindAuction is Ownable2Step, GatewayCaller {
 }
 ```
 
-<a href="https://remix.ethereum.org/#url=https://github.com/RizeLabs/encifher-docs/blob/91134a19e309ad36e0d0cb1251591f26c63fee7e/contracts/BlindAuction.sol&autoCompile=true&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js">Depoly on Remix</a>
+<a href="https://remix.ethereum.org/#url=https://github.com/RizeLabs/encifher-docs/blob/main/contracts/BlindAuction.sol&autoCompile=true&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js" target="_blank">Depoly on Remix</a>
