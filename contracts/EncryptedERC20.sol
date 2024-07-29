@@ -1,12 +1,3 @@
----
-sidebar_position: 1
----
-
-# One Click Deploy Tutorials
-
-### Encrypted ERC20
-
-```
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
 pragma solidity ^0.8.24;
@@ -157,14 +148,3 @@ contract EncryptedERC20 is Ownable2Step {
         emit Transfer(from, to);
     }
 }
-```
-
-<a href="https://remix.ethereum.org/#url=https://github.com/zama-ai/fhevm/blob/main/examples/EncryptedERC20.sol&autoCompile=true&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js">Depoly on Remix</a>
-
-### Private Voting
-
-Add pre-filled link of remix.ethereum.org
-
-### Blind Auction
-
-Add pre-filled link of remix.ethereum.org
