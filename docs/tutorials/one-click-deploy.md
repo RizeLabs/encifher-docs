@@ -159,7 +159,7 @@ contract EncryptedERC20 is Ownable2Step {
 }
 ```
 
-<a href="https://remix.ethereum.org/#url=https://github.com/zama-ai/fhevm/blob/main/examples/EncryptedERC20.sol&autoCompile=true&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js">Depoly on Remix</a>
+<a href="https://remix.ethereum.org/#url=https://github.com/RizeLabs/encifher-docs/docs-remix-edit/contracts/EncryptedERC20.sol&autoCompile=true&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js">Depoly on Remix</a>
 
 ### Private Voting
 
