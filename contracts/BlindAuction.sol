@@ -3,7 +3,7 @@
 pragma solidity ^0.8.24;
 
 import "https://github.com/zama-ai/fhevm/lib/TFHE.sol";
-import "https://github.com/RizeLabs/encifher-docs/docs-remix-edit/contracts/EncryptedERC20.sol";
+import "https://github.com/RizeLabs/encifher-docs/blob/main/contracts/EncryptedERC20.sol";
 import "@openzeppelin/contracts/access/Ownable2Step.sol";
 import "https://github.com/zama-ai/fhevm/gateway/GatewayCaller.sol";
 
