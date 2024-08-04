@@ -50,6 +50,7 @@ const config: Config = {
         alt: 'Encifher Logo',
         src: 'img/encifher-logo-white.png',
       },
+      style: "dark",
       items: [
         {
           type: 'docSidebar',

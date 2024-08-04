@@ -3,17 +3,48 @@
  * and scoped locally.
  */
 
-.heroBanner {
+
+ .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
 }
 
+.herowrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/hero-bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  filter: blur(70px);
+  z-index: -1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .buttons {
@@ -21,4 +52,13 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+  background-color: #5024FF;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+  /* margin: 50px; */
 }
