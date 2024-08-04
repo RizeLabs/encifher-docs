@@ -9,6 +9,27 @@ sidebar_position: 3
 
 for more information on fhevm solidity library visit [here](https://docs.zama.ai/fhevm/v/0.4-2)
 
+### Installation
+
+
+Install with yarn
+
+```bash
+yarn install fhevm
+```
+
+Install with npm
+
+```bash
+npm install fhevm
+```
+
+Install with pnpm
+```bash
+pnpm install fhevm
+```
+
+
 ### Avalaible Encrypted types
 
 | Type      | Supported |
@@ -60,8 +81,17 @@ ebool valueBool = TFHE.asEbool(value32);
 | **Neg**                   | `TFHE.neg`            |
 | **Not**                   | `TFHE.not`            |
 | **Select**                | `TFHE.select`         |
-| **Random unsigned int**   | `TFHE.randEuintX()`   |
+| **Random unsigned int**   | `TFHE.randEuint32()`   |
 
-***Note: Currently we only support version 0.4.0 of fhevm solidity library due to which`TFHE.encrypt` and `TFHE.reencrypt` won't work for now***
+### ACL specific methods
+
+ACL specific methods maintains allowance i.e. whether a particular user should be allowed to compute on a ciphertex or not.
+
+| **Name**                  | **Function Name**     | **Remarks** |  **Usage**     |
+|---------------------------|-----------------------|-----------------------|  -----------------------|  
+| **Allow**                   | `TFHE.allow`            |        Allows a particular address to use a ciphertext | `TFHE.allow(TFHE.euint32(1), userAddress)`     |
+| **AllowTransient**                   | `TFHE.allowTransient`            |   Allows a particular address to use a ciphertext for the scope of a transaction         | `TFHE.allowTransient(TFHE.euint32(1), userAddress)`  |
+| **isAllowed**                   | `TFHE.isAllowed`            |  Checks does an address has allowance to a ciphertext or not |  `TFHE.isAllowed(TFHE.euint32(1), userAddress)`   |
+| **isSenderAllowed**                   | `TFHE.isSenderAllowed`     |   Checks is the caller has an allowance to use a ciphertext        | `TFHE.isSenderAllowed(TFHE.euint32(1), userAddress)` | 
 
 
