@@ -34,7 +34,6 @@ const instance = await createInstance({
   networkUrl: "<devnet url>"
   gatewayUrl: "<gateway url>", // for performing re-encryption
 });
-
 ```
 
 **You might be wondering why do we need gateway url ?**
@@ -47,6 +46,7 @@ Gateway is an integral component of the kms service we are using, It helps in re
 
 ```js
 const userAddress = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
+// contract address which will work with ciphertext
 const contractAddress = "0xa0Ee7A142d267C1f36714E4a8F75612F20a79720";
 
 // creating input object it takes both user address and contract 
@@ -77,7 +77,7 @@ NW, We got you covered
 
 #### Re-encrypting inputs using instance created above
 
-Re-encrypting inputs allows user to encrypt input under their own public key. So that only the user can decrypt the value. Further the re-encryption request is catered through threshold network which encrypts the input under a different user provided public key without decrypting it.
+Re-encrypting inputs allows user to encrypt input under their own public key. So that only the user can decrypt the value. Further the re-encryption request is catered through threshold network which encrypts the input under a different user provided public key without decrypting it. (Never underestimate the power of cryptography ✨)
 
 Ahh you don't have to get into theory to use it 😂
 
@@ -90,11 +90,8 @@ const { publicKey, privateKey } = instance.generateKeypair();
 // Create an EIP712 object for the user to sign.
 const eip712 = instance.createEIP712(publicKey, contractAddress);
 
-// params for signing
-const params = [<your address>, JSON.stringify(eip712)];
-
 // for node
-const signature = await this.signers.alice.signTypedData(
+const signature = await this.signers.signTypedData(
   eip712.domain,
   { Reencrypt: eip712.types.Reencrypt },
   eip712.message,
