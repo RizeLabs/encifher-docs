@@ -4,5 +4,6 @@ sidebar_position: 2
 
 # What is FHE
 
-FHE stands for **fully homomorphic encryption** it enables computation directly on the ciphertext.
+FHE stands for **Fully Homomorphic Encryption** it enables computation directly on the ciphertext.
 
+We didn't decribed it here much 😅 It's under process!

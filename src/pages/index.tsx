@@ -51,7 +51,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               to="/docs/intro"
-              style={{color: "white", textDecoration:"none"}}
+              style={{color: "white", textDecoration:"none", fontWeight: 650}}
             >
               Head over to documentation
             </Link>
@@ -59,7 +59,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <button
               onClick={() => addEncifherNetworkConfig()}
-              style={{background: "transparent", border: 0, fontSize: "medium", fontWeight: 500}}
+              style={{background: "transparent", border: 0, fontSize: "medium", fontWeight: 1000}}
             >
               Add Encifher to Metamask
             </button>
