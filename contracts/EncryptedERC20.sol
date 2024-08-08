@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.24;
 
-import "https://github.com/zama-ai/fhevm/lib/TFHE.sol";
+import "fhevm/lib/TFHE.sol";
 import "@openzeppelin/contracts/access/Ownable2Step.sol";
 
 contract EncryptedERC20 is Ownable2Step {
