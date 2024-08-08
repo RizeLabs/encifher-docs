@@ -5,14 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
-
-@font-face {
-  font-family: menseal_regular;
-  src: url("/font/menseal/Menseal-Regular.ttf");
-}
-
 :root {
-  --ifm-font-family-monospace: menseal_regular;
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
