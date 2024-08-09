@@ -15,7 +15,7 @@ for more information on fhevm solidity library visit [here](https://docs.zama.ai
 Install with yarn
 
 ```bash
-yarn install fhevm
+yarn add fhevm
 ```
 
 Install with npm
@@ -142,3 +142,8 @@ ACL specific methods maintains allowance i.e. whether a particular user should b
 | **isSenderAllowed**                   | `TFHE.isSenderAllowed`     |   Checks is the caller has an allowance to use a ciphertext        | `TFHE.isSenderAllowed(TFHE.euint32(1), userAddress)` | 
 
 
+### Some common errors
+
+- If while installing you're facing the architecture incompaitibility error. Something like this 
+<img src="https://docs.encifher.io/img/error.png" alt="error" />
+In this case you should install `v0.5.1` of fhevm.

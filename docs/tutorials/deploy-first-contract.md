@@ -30,6 +30,9 @@ contract SimpleVoting {
     // A very simple function to add a proposal
     function addProposal(string calldata _proposalName) public {
         Proposals[msg.sender] = Proposal(TFHE.asEuint16(0), _proposalName);
+        Proposal memory _proposal = Proposals[msg.sender];
+        TFHE.allow(_proposal.totalVotes, address(this));
+        TFHE.allow(_proposal.totalVotes, msg.sender);
     }
 
     // A very non-sensical voting function 😅
@@ -42,7 +45,7 @@ contract SimpleVoting {
 
         // allow msg.sender to use this encrypted total votes value
         // rememeber something like ACL (Access Control List) table in docs
-        TFHE.allow(_candidateProposal.totalVotes, msg.sender);
+        TFHE.allowTransient(_candidateProposal.totalVotes, msg.sender);
 
         // updating votes
         _candidateProposal.totalVotes = TFHE.select(userVote, TFHE.add(_candidateProposal.totalVotes, 1), TFHE.add(_candidateProposal.totalVotes, 0));
@@ -67,7 +70,7 @@ function voteProposal(address candidate, einput _vote, bytes calldata _inputProo
 
     // allow msg.sender to use this encrypted total votes value
     // rememeber something like ACL (Access Control List) table in docs
-    TFHE.allow(_candidateProposal.totalVotes, msg.sender);
+    TFHE.allowTransient(_candidateProposal.totalVotes, msg.sender);
 
     // updating votes
     _candidateProposal.totalVotes = 
@@ -76,7 +79,7 @@ function voteProposal(address candidate, einput _vote, bytes calldata _inputProo
 ```
 
 The function accept three parameters 
-- `candidate`: Candidate address which is the user voting for.
+- `candidate`: Candidate address for whose proposal the user is voting.
 - `_vote`: Handle to the user encrypted vote.
 - `_inputProof`: Proof of correct encryption of your vote.
 
@@ -138,13 +141,13 @@ const vote = true;
 console.log(`Plaintext vote: ${vote}`);
 const input = instance.createEncryptedInput(SimpleVotingContractAddress, deployer.address)
 input.addBool(vote);
-const { handle, data } = input.encrypt();
-console.log("Encrypted vote (handle, data):", handle, data);
+const { handles, inputProof } = input.encrypt();
+console.log("Encrypted vote (handle, data):", handles[0], inputProof);
 
-txn = await SimpleVotingContractInstance["voteProposal(address,bytes32)"](
+txn = await SimpleVotingContractInstance["voteProposal(address,bytes32,bytes)"](
     deployer.address,
-    handle[0],
-    data
+    handles[0],
+    inputProof
 );
 
 await txn.wait();
@@ -164,20 +167,20 @@ Next, We are encrypting the user vote. For encrypting user input. First we creat
 ```js
 const input = instance.createEncryptedInput(SimpleVotingContractAddress, deployer.address)
 ```
-Now let's prepare the boolean input to be encrypted using the `addBool` method. To encrypt it we use the `input.encrypt` method. Which returns two things `(handle, data)`.
+Now let's prepare the boolean input to be encrypted using the `addBool` method. To encrypt it we use the `input.encrypt` method. Which returns two things `(handle, inputProof)`.
 
-`handle`: Handle to the encrypted value (this would be an array if your are encrypted multiple values at a single time)
-`data`: Proof of correct encryption. 
+`handles`: Handle to the encrypted value (this would be an array if your are encrypted multiple values at a single time)
+`inputProof`: Proof of correct encryption. 
 
 ```js
 input.addBool(vote);
-const { handle, data } = input.encrypt();
+const { handles, inputProof } = input.encrypt();
 ```
 
 Finally!! We call the `voteProposal` method with relevant parameters
 
 ```js
-txn = await SimpleVotingContractInstance["voteProposal(address,bytes32)"](
+txn = await SimpleVotingContractInstance["voteProposal(address,bytes32,bytes)"](
     deployer.address,
     handle[0],
     data

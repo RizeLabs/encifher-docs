@@ -11,7 +11,7 @@ Follow these few steps to claim testnet tokens
 1. Head over to [tools.encifher.io](https://tools.encifher.io)
 2. Paste your favourite evm address to receive tokens.
 
-<img src="http://localhost:3000/img/faucet.png" alt="faucet" />
+<img src="https://docs.encifher.io/img/faucet.png" alt="faucet" />
 
 3. Click on "Claim 0.1 ebtc token" to receive testnet token.
 4. Voila you just made your first transaction on Encifher and got some token to build amazing stuff.
@@ -22,6 +22,6 @@ Follow these few steps to claim testnet tokens
 1. It's too easy, Since we already bootstrapped lots of stuff for you for devnet 😉
 2. Just select **Bridge** from dropdown, Paste your evm address, wait for few mins and Boom 💥
 
-<img src="http://localhost:3000/img/bridge.png" alt="faucet" />
+<img src="https://docs.encifher.io/img/bridge.png" alt="faucet" />
 
 3. Last thing use your ebtc wisely !! Just kidding be wild as possible 😆
