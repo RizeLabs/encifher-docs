@@ -9,7 +9,7 @@ sidebar_position: 2
 Install with yarn
 
 ```bash
-yarn install fhevmjs
+yarn add fhevmjs
 ```
 
 Install with npm

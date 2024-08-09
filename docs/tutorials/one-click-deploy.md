@@ -16,7 +16,7 @@ sidebar_position: 1
 
 ### Some common issues
 
-- In case if you do not see your account loaded in remix after selecting **"Injected Provider - MetaMask"**. Then just select the environment as **"Custom - External Http Provider"**. And add this rpc url `https://rpc.encifher.io`.
+- In case if you do not see your account loaded in remix even after selecting **"Injected Provider - MetaMask"**. Then just select the environment as **"Custom - External Http Provider"**. And add this rpc url `https://rpc.encifher.io`.
 
 - If you have trouble getting tokens to deploy feel free to dm me [here](https://t.me/@creator5923)
 

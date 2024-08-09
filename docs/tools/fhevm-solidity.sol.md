@@ -41,7 +41,7 @@ pnpm install fhevm
 | **euint32**   | ✔️ Yes     | encrypting uint32 values |
 | **euint64**   | ✔️ Yes     |encrypting uint64 values |
 | **eaddress**  | ✔️ Yes     |encrypting an evm address |
-| **ebytes256** | ✔️ Yes     | |
+| **ebytes256** | ✔️ Yes     | encrypting upto 256 bytes |
 |  **einput** | ✔️ Yes    |  stores handles of ciphertext  |
 
 ### Casting / Usage

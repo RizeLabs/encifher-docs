@@ -15,7 +15,7 @@ function HomepageHeader() {
           method: "wallet_addEthereumChain",
           params: [
             {
-              chainId: "0xdea89",
+              chainId: "0x2328",
               chainName: "Encifher",
               rpcUrls: ["https://rpc.encifher.io"],
               iconUrls: [
@@ -23,8 +23,8 @@ function HomepageHeader() {
                 "https://encifher.io/enc.png",
               ],
               nativeCurrency: {
-                name: "ENCIFHER",
-                symbol: "ENC",
+                name: "enc Bitcoin",
+                symbol: "ebtc",
                 decimals: 18,
               },
               blockExplorerUrls: ["https://explorer.encifher.io"],
@@ -47,7 +47,6 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttonContainer}>
-          {" "}
           <div className={styles.buttons}>
             <Link
               to="/docs/intro"
