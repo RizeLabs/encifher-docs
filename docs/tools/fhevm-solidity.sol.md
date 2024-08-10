@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# fhevm Solidity Library
+# Fhevm Solidity Library
 
 `fhevm` is the solidity library which enables developers to store encrypted states and further perform operations on those encrypted states.
 
