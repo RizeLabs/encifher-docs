@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ### Why Is FHE Such a Big Deal? 🚀
 
-- **Privacy-Preserving:** Sensitive data is kept secret and safe during the whole computation process when using FHE. For sectors where data privacy is critical, such as healthcare 🩺, finance 🏦, and cloud computing ☁️, this is revolutionary.
+- **Privacy-Preserving:** Sensitive data is kept secret and safe during the whole computation process when using FHE. For sectors where data privacy is critical, such as healthcare 🩺, finance 🏦, and cloud computing ☁️, this is revolutionary!
 
 - **Versatile Applications:** FHE can be used in a variety of contexts, such as encrypted cloud storage ☁️, private machine learning 🤖, and secure voting systems 🗳️. This approach enables users to safely outsource computations without sacrificing control over their data.
 
