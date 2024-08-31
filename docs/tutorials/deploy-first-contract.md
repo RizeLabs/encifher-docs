@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # Deploy First Confidential Contract
 
-In this tutorial we will deploy a very simple voting contract where user can vote on proposal just by saying true/false. And once the voting ends we will check does the proposal has enough yes (greater than an threshold number). If it has the proposal wins. Here with FHE we are able to enable this voting in a privacy friendly manner where no on knows who votes what !! Isn't that crazy ⚡
+In this tutorial we will deploy a very simple voting contract where user can vote on proposal just by saying true/false. And once the voting ends we will check does the proposal has enough yes (greater than an threshold number). If it has then the proposal wins! Here with FHE we are able to enable this voting in a privacy-friendly manner where no one knows who voted for what! Isn't that crazy? ⚡
 
-During this tutorial we will mostly focusing on how can you use encrypted types onchain, Instead of focusing on the actual logic Since we know you are already smart enough to do that!
+During this tutorial, we'll mostly focus on how you can use encrypted types on-chain 🔐, instead of diving into the actual logic—because we know you're already smart enough to handle that!
 
 **Step 1: Write very simple contract**
 
@@ -57,7 +57,7 @@ Let's understand whats exactly happening in the contract, There are total of two
 - `addProposal`: This is simple method to add proposal.
 - `voteProposal`: This method enable user to cast their vote (true / false) to a particular proposal.
 
-Let's understand `voteProposal` method since it's looks pretty interesting.
+Let's understand the `voteProposal` method, as it looks pretty interesting!
 
 ```js
 // A very non-sensical voting function 😅
@@ -79,8 +79,8 @@ function voteProposal(address candidate, einput _vote, bytes calldata _inputProo
 ```
 
 The function accept three parameters 
-- `candidate`: Candidate address for whose proposal the user is voting.
-- `_vote`: Handle to the user encrypted vote.
+- `candidate`: The address of the candidate for whom the user is voting.
+- `_vote`: Handle to the user's encrypted vote.
 - `_inputProof`: Proof of correct encryption of your vote.
 
 And then we finally get the actual encrypted vote onchain via
@@ -91,17 +91,17 @@ ebool userVote = TFHE.asEbool(_vote, _inputProof);
 
 This line does couple of things
 - It verifies that the encrypted vote has correct format or not via `_inputProof`.
-- Makes sure the user has encrypted either a boolean value.
+- Makes sure the user has encrypted either of the boolean values.
 - Finally it stores the encrypted value of true / false in `userVote` variable. 
 
 I'll skip the next line since it's straightforward 
 
-Now below we are allowing the `msg.sender` for the scope of his transaction to be able to play with the `_candidateProposal.totalVotes` encrypted value since the user want to increase / decrease total votes for the proposal. We use `allowTransient` since we want to give him permission just for the scope of the transaction.
+Now, below, we are allowing the `msg.sender` to manipulate the `_candidateProposal.totalVotes` encrypted value within the scope of their transaction, as the user wants to increase or decrease the total votes for the proposal. We use `allowTransient` to grant this permission only for the duration of the transaction.
 
 ```js
 TFHE.allowTransient(_candidateProposal.totalVotes, msg.sender);
 ```
-Now comes the juicy part!
+Now here comes the juicy part!🤩
 
 ```js
 _candidateProposal.totalVotes = 
@@ -109,9 +109,9 @@ _candidateProposal.totalVotes =
 ```
 
 Since, you'll must be knowing that `TFHE.add` functions helps in performing addition operation to encrypted value.
-Further, `TFHE.select` helps you in selecting a encrypted value based on the encrypted boolean passed `userVote` in this case.
+Further, `TFHE.select` helps you in selecting an encrypted value based on the encrypted boolean passed `userVote` in this case.
 
-So, if the encrypted value `userVote` plaintext correspond to the plaintext `true` value then we will increment `_candidateProposal.totalVotes` by 1 else we won't. As simple as that! 
+So, if the encrypted value `userVote` plaintext correspond to the plaintext `true` value then we will increment `_candidateProposal.totalVotes` by 1; otherwise, we won’t. It’s as simple as that! 
 
 **Step 2: Let's go the js / ts part**
 
@@ -162,7 +162,7 @@ Firstly we are creating the fhevmjs instance using the `createInstance` method a
 const instance = await createInstance();
 ```
 
-Next, We are encrypting the user vote. For encrypting user input. First we create a input object using the `createEncryptedInput` method with relevant context of contract address and user address.
+Next, we encrypt the user's vote. To do this, we first create an input object using the `createEncryptedInput` method, providing the relevant context which are the contract address and user address in this case.
 
 ```js
 const input = instance.createEncryptedInput(SimpleVotingContractAddress, deployer.address)
@@ -187,4 +187,4 @@ txn = await SimpleVotingContractInstance["voteProposal(address,bytes32,bytes)"](
 );
 ```
 
-You can find the code related to this tutorial [here](https://github.com/RizeLabs/Sample-Hardhat-Template)
+You can find the code related to this tutorial [here](https://github.com/RizeLabs/Sample-Hardhat-Template)!
