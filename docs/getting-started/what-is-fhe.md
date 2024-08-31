@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# What is FHE
+# What is FHE ?
 
 **Fully Homomorphic Encryption** , or FHE for short, is a revolutionary cryptographic method that allows computation on encrypted data (ciphertext) directly without the need to first decrypt it! 🔒 How awesome is it to be able to execute intricate calculations or data analysis on confidential material without ever disclosing the underlying data? 🧠
 
