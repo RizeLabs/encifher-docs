@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Fhevmjs
 
-### Installation
+## Installation
 
 Install with yarn
 
@@ -23,7 +23,7 @@ Install with pnpm
 pnpm install fhevmjs
 ```
 
-### Using fhevmjs
+## Using fhevmjs
 
 ### Creating Instance 
 
@@ -36,9 +36,9 @@ const instance = await createInstance({
 });
 ```
 
-**You might be wondering why do we need gateway url ?**
+**You might be wondering why do we need a gateway url ?**
 
-Gateway is an integral component of the kms service we are using, It helps in re-directing decryption and re-encryption related request to KMS blockchain.
+Gateway is an integral component of the KMS service we are using, It helps in re-directing decryption and re-encryption related request to KMS blockchain.
 
 ### Using Instance created above
 
@@ -63,7 +63,7 @@ const encryptedAmount = input.encrypt();
 
 **Thanks for showing method for encrypting a uint64 what about other datatypes ?**
 
-NW, We got you covered 
+No worries, we've got you covered!
 
 - `addBool` - encrypt bool value
 

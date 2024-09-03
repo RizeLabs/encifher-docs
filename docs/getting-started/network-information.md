@@ -18,4 +18,4 @@ sidebar_position: 1
 
 Too! tired to add this into your metamask manually ? We got you! just click on "**Add Encifher to Metamask**" [here](https://docs.encifher.io/).
 
-***Interesting fact: The reason behind chain id being 9000 is none ***
+**Interesting fact: The reason behind chain id being 9000 is none 😜**
