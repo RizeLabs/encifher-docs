@@ -39,10 +39,9 @@ function HomepageHeader() {
 
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx(styles.heroBanner)}>
-      <div className={styles.herowrap}></div>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
+    <header className={clsx(styles.heroBanner)} >
+      <div className="container" style={{display:"flex", flexDirection: "column", justifyContent:"center", alignItems: "center"}}>
+        <Heading as="h1" className="hero__title" style={{fontFamily: "Menseal", textTransform: "uppercase", fontSize: "80px"}}>
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -50,7 +49,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               to="/docs/intro"
-              style={{color: "white", textDecoration:"none", fontWeight: 650}}
+              style={{color: "white", textDecoration:"none", fontWeight: 400}}
             >
               Head over to documentation
             </Link>
@@ -58,7 +57,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <button
               onClick={() => addEncifherNetworkConfig()}
-              style={{background: "transparent", border: 0, fontSize: "medium", fontWeight: 1000}}
+              style={{color: "white", background: "transparent", border: 0, fontSize: "medium", fontWeight: 400}}
             >
               Add Encifher to Metamask
             </button>
