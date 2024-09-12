@@ -4,31 +4,25 @@
  */
 
 
+@font-face {
+  font-family: 'Menseal';
+  src: url('/font/menseal/Menseal-Regular.ttf');
+}
+
+
  .heroBanner {
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
   text-align: center;
   position: relative;
-  overflow: hidden;
-  height: 100vh;
+  overflow: clip;
+  height: 95vh;
   background-color: rgba(0, 0, 0, 0.6);
+  background-image: url("/img/bg.webp");
   display: flex;
   align-items: center;
 }
 
-.herowrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/img/hero-bg.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
-  filter: blur(70px);
-  z-index: -1;
-}
+
 
 .heroContent {
   position: relative;
@@ -43,8 +37,9 @@
 
 .buttonContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 30px;
 }
 
 .buttons {
@@ -52,13 +47,11 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  background-color: #5024FF;
+  background: linear-gradient(97.15deg, #7857FF 2.94%, #572EFF 37.06%, #5024FF 78.64%, #7857FF 109.56%);
+  border-radius: 60px;
   color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 250px;
-  font-size: medium;
-  font-weight: 500;
+  padding: 20px 32px;
+  font-weight:300;
   cursor: pointer;
   /* margin: 50px; */
 }
