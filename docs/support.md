@@ -4,6 +4,6 @@ sidebar_position: 5
 
 # Support
 
-#### If you are facing any issues. I am happy to help you resolve it 😊
+#### If you are facing any issues. We are happy to help you resolve it 😊
 
-You can dm me [here](https://t.me/creator5923)
+You can DM our team here on [Telegram](https://t.me/encifher)
