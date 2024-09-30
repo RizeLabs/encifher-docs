@@ -10,6 +10,13 @@ Currently the team has developed a zero toxic MEV loss DEX. Do check it out!
 
 Use **[Encifher](https://www.app.encifher.io)**
 
+*Watch the demo **[here](https://youtu.be/Sx5bIlXJBlA)***
 
-[![Encifher Demo](https://i9.ytimg.com/vi_webp/Sx5bIlXJBlA/mq2.webp?sqp=CNCM67cG-oaymwEmCMACELQB8quKqQMa8AEB-AHSCIAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLAoADvzHb8n2bfdjwrBvgEyw7tJDg)](https://youtu.be/Sx5bIlXJBlA)
+Currently the demo is optimised only for desktop/laptop devices.
 
+Here are the **steps** to try it out:
+1. Add Encifher Devnet Network to your Metamask by clicking the button on the right.
+2. Go to the Faucet website from the above Navbar and take eBTC for gas, eUSDT and eUSDC for DEX usage.
+3. Go back to Dex and select eUSDT to eUSDC OR eUSDC to eUSDT for swap.
+4. Sign one transaction pop-ups that come
+5. Go to explorer.encifher.io and check your encrypted swap transaction
