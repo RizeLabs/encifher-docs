@@ -15,7 +15,7 @@ Use **[Encifher](https://app.encifher.io/)**
 Currently the demo is optimised only for desktop/laptop devices.
 
 Here are the **steps** to try it out:
-1. Open https://app.encifher.io/ and add Encifher Devnet Network to your Metamask by clicking the button on the right.
+1. Open https://app.encifher.io/ .
 2. Go to the Faucet website from the above Navbar and take eBTC for gas, eUSDT and eUSDC for DEX usage.
 3. Go back to Dex and select eUSDT to eUSDC OR eUSDC to eUSDT for swap.
 4. Sign one transaction pop-ups that come
