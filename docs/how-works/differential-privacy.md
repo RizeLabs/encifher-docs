@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Differential Privacy
 
 Differential privacy is a mathematical framework used to quantify and ensure the privacy of individuals within a dataset [1].

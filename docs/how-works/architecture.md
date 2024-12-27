@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Architecture
 [This is the same text as our ETH Research Post](https://ethresear.ch/t/bringing-privacy-to-evm-applications-using-confidential-computing-via-co-processors/21217)
 

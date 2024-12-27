@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # PET Co-processor
 
 ### Functioning of TEE Co-Processor
