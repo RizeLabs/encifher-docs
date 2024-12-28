@@ -18,7 +18,7 @@ Users can send payments without revealing their addresses and telling the amount
 
 ### Who is the user?
 
-Users who need to send <500 USD for day to day payments
+Users who need to send < 500 USD for day to day payments
 
 #### Degen Traders
 
