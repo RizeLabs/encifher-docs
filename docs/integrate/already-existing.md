@@ -7,6 +7,12 @@ sidebar_position: 3
 
 We will have SDK's available for integrating privcate Defi primitives such as swapping, lending, staking etc to be integerated at the wallet or dapp level. 
 
+1. Standard tokens (e.g., USDC) are seamlessly wrapped into private versions (e.g. eUSDC) with all ERC20 functionality intact.
+2. Transaction batching adds noise to mask individual details while ensuring efficiency.
+3. Off-chain cryptographic computations preserve blockchain performance.
+4. Aggregate private actions (swaps, lending, staking) through a Uniswap-inspired structure.
+5. Selective transparency through spending and viewing keys ensures regulatory alignment.
+
 ## Wrapping Tokens
 Encifher enables peforming Defi activities privately using Encrypted Tokens users are just required to wrap their tokens into their Encrypted forms at the Dapp level dapps could portray this process as a deposit process just to create to level of abstraction for user. While wrapping their tokens further wrapping could just be done via SDKs or contract integration.
 
