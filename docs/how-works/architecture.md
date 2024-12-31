@@ -1,30 +1,48 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Architecture
-[This is the same text as our ETH Research Post](https://ethresear.ch/t/bringing-privacy-to-evm-applications-using-confidential-computing-via-co-processors/21217)
 
-## Encrypted ERC20 Tokens
-Encrypted ERC20 standard for privatizing user token balances. Any token balance intended for homomorphic computation on-chain would need to be wrapped within this encrypted ERC20 standard. This approach can serve as a foundation for building various privacy-focused solutions, such as private payments, private auctions, dark pools, and more.
+A key component of this system is the **off-chain co-processor**, which performs encrypted computations on private (encrypted) values and syncs seamlessly with the on-chain state.
 
-This standard implements necessary interfaces which is used to implement necessary compliance checks, which include selective disclosure of specific ciphertext requested and a few other checks.
+---
 
-To learn more about Encrypted ERC20 you can read this article by Circle [3] 11
+## PET Co-Processor
 
-## Differential Privacy with Order Aggregation and Batch Settlements
-We propose a solution leveraging differential privacy to enable order-solving for encrypted orders. This allows users to place encrypted orders (orders with encrypted tokens) and have them processed on-chain without revealing their details. External parties cannot determine the exact order details associated with a specific user.
+The **Privacy-Enhancing Technology (PET) Co-Processor** is the backbone of Encifher’s architecture. It uses advanced cryptographic techniques to enable secure, private, and efficient computations off-chain while maintaining synchronization with the blockchain.
 
-Batching is a core component of this solution. The challenge with processing a single encrypted order directly through the protocol is that once decrypted, the amount the user intended to hide becomes visible. To mitigate this, we aggregate multiple orders using the additive homomorphic properties of certain privacy-enhancing technologies (PETs), such as Fully Homomorphic Encryption (FHE). The encrypted amounts are summed and deposited as an aggregated value with a designated manager. The manager’s role is to decrypt this aggregated value via a secure wrapper (obtaining the decrypted tokens amountIn values) so that the resulting assets can interact with the appropriate solver protocol.
+---
 
-By batching encrypted orders, we introduce a level of noise into each order, effectively preserving the privacy of individual users’ order details.
+### **What is Symbolic Execution?**
 
-![alt text](image-3.png)
-The design is inspired by Zswap DEX of Penumbra [5] 4, which uses sealed-bid batch swaps. The price at which these orders are settled is identical, as there is only one transaction per epoch.
+WIP  
+*(Symbolic execution will be elaborated upon in future updates.)*
 
-Once the order is solved, the return token amount belonging to the user is calculated homomorphically using the ratio of the input amount to the output amount (the amount received upon solving the order). This calculation is performed homomorphically in the encrypted space, ensuring that no one can fully determine how many tokens a particular user will receive, thereby preserving privacy.
+---
 
-![alt text](image-4.png)
-End to End flow Order placing → Order Aggregation → Order Solving → Distribution
+### **How the TEE Co-Processor Functions**
 
-![alt text](image-5.png)
+The **Trusted Execution Environment (TEE)** co-processor is designed to handle encrypted computations efficiently. Here’s how it works:
+
+1. **Real-Time Sync with Full Node**:
+   - The TEE co-processor operates alongside a **full blockchain node**, which continuously syncs with the latest blocks on-chain.
+
+2. **Encrypted Requests**:
+   - The full node sends encrypted computation requests to the co-processor, ensuring sensitive data remains protected throughout the process.
+
+3. **Symbolic Execution**:
+   - The co-processor leverages **symbolic execution** to handle complex calculations on ciphertexts without exposing plaintext values.
+
+4. **Output Generation**:
+   - Once computations are completed, the co-processor produces cryptographic proofs and updates the necessary encrypted states, ensuring seamless integration with the blockchain.
+
+WIP  
+*(More details will be added to illustrate the workflow.)*
+
+---
+
+### **Future Work**
+This section will be expanded to include detailed diagrams, additional explanations of symbolic execution, and performance benchmarks as the architecture evolves.
+
+
