@@ -4,37 +4,56 @@ sidebar_position: 2
 
 # Trading 
 
-## Why trading?
+## Why Trading?
 
-Having the ability to trade on-chain has been the priority for multiple users. Looking at the data we can see that 5M/USD is being earned by roughly RailGun(one of the providers of Private swap).
+Trading on-chain has always been a top priority for users, but it comes with one big problem: **everything is public.**
 
-On-chain trades are fully transparent, making transaction details publicly visible.
+Take RailGun, for example—a provider of private swaps. Their users collectively earn around **$5M USD**, proving the demand for privacy in trading. But the broader market still struggles with transparency issues that harm traders in multiple ways:
 
-Traders using specific strategies can easily be copied, front-run (exploited), or reverse-engineered. This lack of confidentiality undermines their competitive edge.
+1. **Public Trades Mean Public Secrets**:
+   - Every trade is an open book, exposing transaction details for anyone to see.
+   - Result? Traders lose their competitive edge as strategies can be **copied**, **front-run**, or **reverse-engineered**.
 
-Information asymmetry is a core feature of financial systems, allowing participants to gain rewards based on unique insights or strategies. Publicly visible trades erode this necessary asymmetry.
+2. **Information Asymmetry Matters**:
+   - Financial systems thrive on **information asymmetry**, where unique insights or strategies are rewarded.
+   - Publicly visible trades destroy this edge, leveling the playing field in the wrong way.
 
-Instead of leveling the playing field, we are seeing cabals or closed Telegram groups exploit access to private "alpha" (trade secrets). This dynamic resembles insider trading in traditional finance, creating unfair advantages for select groups.
+3. **Private Groups Exploit "Alpha"**:
+   - Instead of open competition, **closed Telegram groups** and cabals are exploiting private trade secrets.
+   - This creates an uneven dynamic, resembling **insider trading** in traditional finance.
 
-By enabling privacy for on-chain strategies, we can restore fair competition. Traders and users can be paid or incentivized based on their proprietary strategies while keeping their competitive edge intact.
+### **The Solution**
+By enabling **privacy for on-chain strategies**, we can restore fairness. Traders can execute their unique strategies without fear of being exploited, incentivizing them to participate openly while keeping their competitive edge intact.
 
+---
 
-### Who is the user?
+## Who is the User?
 
+Let’s break it down—there are two main personas who benefit from private trading:
 
+### **1. Degen Traders**
+- These are the pros, the high-risk, high-reward players of the crypto world.
+- They need to move funds between addresses **without creating obvious linkages** that could expose their strategies.
 
-## Degen Traders
+### **2. Daily Taskers**
+- These are everyday users who value privacy in their financial lives.
+- For example, they don’t want to share their address with a sender, as it could reveal their **entire balance sheet**.
 
-These traders want to send addresses between their addresses without any hard linkages.
+---
 
-## Daily tasker
+## Advantages of Private Trading
 
-These people dont want to share their addresses with the sender to reveal their balance sheets.
+1. **Simplifying Payments for Web2 Users**:
+   - Make crypto transactions feel as seamless as Venmo or PayPal, with privacy baked in.
 
-### Advantages 
+2. **Trade Privately with Bots (Coming Soon)**:
+   - A bot that enables secure, private trades without exposing sensitive details.
 
-- Making payments easy for web2 users
-- Trade privately from the BOT (Coming Soon)
-- DCA (Coming Soon)
+3. **Dollar-Cost Averaging (DCA) Privately (Coming Soon)**:
+   - Automate your investments in privacy, ensuring no one can track your accumulation strategy.
 
+---
 
+### **Why Private Trading Matters**
+
+By bringing privacy to on-chain trading, we’re leveling the playing field in the right way. Whether you’re a **degen trader** protecting your edge keeping your balances private, the ability to trade confidentially is a game-changer for fairness and security.
