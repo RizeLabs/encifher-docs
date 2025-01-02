@@ -7,7 +7,7 @@ sidebar_position: 1
 ## Why Payments?
 
 <p align="center">
-  <img src="image-2.png" alt="Total holders of stablecoins over the years" width="60%">
+  <img src="image-2.png" alt="Total holders of stablecoins over the years" width="60%" />
 </p>
 <p align="center">
   <em>Total holders of stablecoins over the years [Source: <a href="https://www.youtube.com/watch?v=fQbf2zwRrk0">Multicoin Summit 2024</a>]</em>
@@ -25,7 +25,7 @@ For merchants to fully adopt stablecoin payments in their day-to-day operations,
    - Merchants need **privacy in their balance sheets**, ensuring their sensitive financial data is shielded while maintaining operational transparency.
    
 <p align="center">
-  <img src="image-1.png" alt="Top 3 needs in stablecoins" width="60%">
+  <img src="image-1.png" alt="Top 3 needs in stablecoins" width="60%" />
 </p>
 <p align="center">
   <em>Top 3 needs in stablecoins as identified by Multicoin Capital at the Multicoin Summit 2024.</em>
