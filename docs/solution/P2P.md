@@ -6,9 +6,8 @@ sidebar_position: 1
 
 ## Why Payments?
 
-<p align="center">
-  <img src="image-2.png" alt="Total holders of stablecoins over the years" width="60%" />
-</p>
+
+![alt text](image-2.png)
 <p align="center">
   <em>Total holders of stablecoins over the years [Source: <a href="https://www.youtube.com/watch?v=fQbf2zwRrk0">Multicoin Summit 2024</a>]</em>
 </p>
@@ -24,20 +23,14 @@ For merchants to fully adopt stablecoin payments in their day-to-day operations,
 2. **Privacy for Financial Peace**:
    - Merchants need **privacy in their balance sheets**, ensuring their sensitive financial data is shielded while maintaining operational transparency.
    
-<p align="center">
-  <img src="image-1.png" alt="Top 3 needs in stablecoins" width="60%" />
-</p>
+![alt text](image-1.png)
 <p align="center">
   <em>Top 3 needs in stablecoins as identified by Multicoin Capital at the Multicoin Summit 2024.</em>
 </p>
 
----
-
 ## Micro Payments Bot
 
 Introducing the **Micro Payments Bot**, designed to address privacy concerns for small, everyday transactions. This bot allows users to send payments without exposing their addresses or transaction details on public blockchains.
-
----
 
 ### **Who is the User?**
 
@@ -57,23 +50,16 @@ Everyday users who need a simple, private way to send small payments—whether s
 #### **5. Micro Payments to Friends**:
 - Friends making small transfers don’t want their entire financial history revealed to senders, ensuring their balance sheets remain confidential.
 
----
-
 ### **Why Private P2P Payments Matter**
 
-1. **Preserve Financial Privacy**:
-   - Protect sensitive transaction details and wallet balances from public scrutiny.
+1. Protect sensitive transaction details and wallet balances from public scrutiny.
 
-2. **Enable Merchant Adoption**:
-   - Privacy encourages businesses to adopt stablecoin payments without fear of exposing their financial data.
+2. Privacy encourages businesses to adopt stablecoin payments without fear of exposing their financial data.
 
-3. **Shield Against Exploitation**:
-   - Prevent trackers and bots from targeting high-value users or exploiting on-chain data.
+3. Prevent trackers and bots from targeting high-value users or exploiting on-chain data.
 
-4. **Improve Usability**:
-   - Make crypto transactions as seamless and intuitive as traditional payment methods like Venmo or PayPal.
+4. Make crypto transactions as seamless and intuitive as traditional payment methods like Venmo or PayPal.
 
----
 
 ### **The Future of P2P Payments**
 
