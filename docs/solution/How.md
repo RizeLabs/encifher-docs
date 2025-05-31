@@ -52,8 +52,6 @@ When you’re ready to withdraw, you can move your assets to any wallet address 
   <em>Withdraw assets</em>
 </p>
 
-
-
 ## Best Practices for Maximizing Privacy
 
 To get the most out of Encifher’s privacy layer, follow these recommended practices:
