@@ -2,6 +2,8 @@
 sidebar_position: 5
 ---
 
+# Benefits of Privacy 2.0 Solutions
+
 ### **Benefits of Privacy 2.0**
 
 1. **Privacy Without Sacrificing Decentralization:**
